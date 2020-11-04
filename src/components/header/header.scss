@@ -1,0 +1,84 @@
+@import "../../base";
+
+.header {
+  width: 100vw;
+  padding: 8vh 0;
+  background-color: black;
+  color: white;
+
+  .header__mainH {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .mainH__front {
+      order: 3;
+      background-color: $color3;
+      padding: 2vh;
+    }
+
+    .mainH__figure {
+      order: 2;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .mainH__text {
+      order: 1;
+      text-align: center;
+      * {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
+    .header__mainH {
+      flex-wrap: nowrap;
+      flex-direction: row;
+
+      .mainH__front {
+        order: 1;
+        writing-mode: vertical-rl;
+        transform-origin: 100% 100%;
+        transform: rotateZ(90deg) rotateY(180deg) translateY(-50px);
+        box-shadow: -2px -2px 5px 1px lighten($color3, 10);
+
+        p {
+          transition: 1.2s all;
+          transform: rotateX(180deg);
+        }
+      }
+
+      .mainH__figure {
+        flex-basis: 15%;
+      }
+
+      .mainH__text {
+        order: 3;
+        writing-mode: vertical-rl;
+        transition: 2s transform;
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  .header:hover {
+    .header__mainH {
+      .mainH__front {
+        p {
+          color: $color1;
+        }
+      }
+
+      .mainH__text {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../base";
+
+.contact {
+  display: grid;
+  margin: 8vh 0;
+
+  .contact__mainC {
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    @extend .boxShadow;
+
+    .mainC__title {
+      background-color: $color3;
+      text-align: center;
+      padding: 0 2vh;
+      font-size: 20px;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+    }
+
+    .mainC__form {
+      @extend .flexWrap;
+
+      label {
+        flex-basis: 100%;
+        padding: 1em;
+        text-align: center;
+
+        input {
+          @extend .input;
+          @extend .boxShadow;
+        }
+
+        textarea {
+          @extend .input;
+          @extend .boxShadow;
+          resize: none;
+        }
+
+        ::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      label:focus-within {
+        input,
+        textarea {
+          border-color: $color1;
+        }
+      }
+
+      button {
+        flex-basis: 40%;
+        outline: none;
+        border: none;
+        background-color: $color3;
+        margin-bottom: 1em;
+        animation: alternate infinite 1.5s shadow forwards;
+      }
+
+      button:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .contact {
+    .contact__mainC {
+      width: 40vw;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact {
+    .contact__mainC {
+      width: 30vw;
+    }
+  }
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 2px 2px 2px 2px lighten(black, 50);
+  }
+}

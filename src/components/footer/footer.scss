@@ -1,0 +1,43 @@
+@import "../../base";
+
+.footer {
+  width: 100vw;
+  background-color: black;
+
+  a {
+    transition: color 1s linear;
+    color: white;
+  }
+
+  .footer__mail {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      font-weight: bold;
+      font-size: 25px;
+      transition: color 1s linear;
+    }
+
+    a:hover {
+      color: $color3;
+    }
+  }
+
+  .footer__socialMedia {
+    height: 12vh;
+    @extend .flexWrap;
+    align-items: flex-start;
+
+    a {
+      padding: 0 0.5em;
+      font-size: 35px;
+    }
+
+    a:hover {
+      color: $color3;
+    }
+  }
+}

@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faLinkedin,
+  faGithub,
+  faHtml5,
+  faCss3Alt,
+  faNode,
+  faJs,
+  faReact,
+  faSass,
+  faGitAlt,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faFileCode } from "@fortawesome/free-regular-svg-icons";
+
+import Home from "./pages/home/home";
+import Cursor from "./components/cursor/cursor";
+
+import "./App.scss";
+
+library.add(
+  faLinkedin,
+  faGithub,
+  faHtml5,
+  faCss3Alt,
+  faNode,
+  faJs,
+  faReact,
+  faSass,
+  faGitAlt,
+  faDatabase,
+  faFileCode
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App"
+      // onContextMenu={(e) => {
+      //   e.preventDefault();
+      // }}
+    >
+      <Cursor />
+      <Home />
     </div>
   );
 }

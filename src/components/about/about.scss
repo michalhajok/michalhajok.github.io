@@ -1,0 +1,62 @@
+@import "../../base";
+
+.about {
+  margin: 8vh 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: $color1;
+
+  .about__mainA {
+    margin: 5vh 0;
+    padding: 2em 0;
+    @extend .boxShadow;
+
+    .mainA__who {
+      padding-left: 2vw;
+
+      a {
+        color: $color3;
+      }
+    }
+
+    .mainA_cv {
+      display: flex;
+
+      .cv_link {
+        transition: color 1s, background-color 2s linear;
+        padding: 0.5vh 3vh;
+        margin: 0 2vh;
+        color: $color1;
+        background-color: $color3;
+      }
+
+      .cv_link:hover {
+        color: $color3;
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .about {
+    margin: 8vh 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    .about__mainA {
+      grid-column: 2/3;
+
+      .mainA__who {
+        display: flex;
+
+        h1 {
+          order: 2;
+          writing-mode: vertical-lr;
+          background-color: $color3;
+          padding: 1em;
+        }
+      }
+    }
+  }
+}

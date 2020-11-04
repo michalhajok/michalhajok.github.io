@@ -1,0 +1,106 @@
+@import "../../base";
+
+.skills {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10vh 0;
+  background-color: $color1;
+  color: $color2;
+
+  .skills__mainS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .mainS__title {
+      flex-basis: 100%;
+      margin: 1vh 0;
+      padding: 1vh 0;
+      text-align: center;
+      font-size: 25px;
+      background-color: $color2;
+      color: $color1;
+    }
+
+    .mainS__technologies {
+      flex-basis: 100%;
+      display: flex;
+
+      .technologies__list {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        .list__technology {
+          padding: 0 1em;
+
+          .technology__tooltip {
+            display: none;
+            position: absolute;
+          }
+        }
+
+        .list__technology:hover {
+          svg {
+            opacity: 0.6;
+          }
+          .technology__tooltip {
+            display: block;
+            transform: translateX(-1em) translateY(1vh);
+            background-color: $color2;
+            color: $color1;
+            padding: 0 0.5em;
+            border-radius: 1em;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      h3 {
+        order: 2;
+        writing-mode: vertical-lr;
+        background-color: $color3;
+        color: $color1;
+        padding: 1vh;
+      }
+    }
+
+    .mainS__languages {
+      flex-basis: 100%;
+      display: flex;
+
+      h3 {
+        writing-mode: vertical-rl;
+        transform: rotateZ(180deg);
+        background-color: $color3;
+        color: $color1;
+        padding: 1vh;
+      }
+      .languages__list {
+        display: grid;
+        place-content: center;
+
+        .list__language {
+          padding: 0.5em;
+          display: flex;
+
+          p {
+            margin: 0 1vh;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .skills {
+    grid-template-columns: 1fr 3fr 1fr;
+    .skills__mainS {
+      grid-column: 2/3;
+    }
+  }
+}

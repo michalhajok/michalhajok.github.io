@@ -1,0 +1,26 @@
+$color2: white;
+$color1: black;
+$color3: #f5ab35;
+//#8c9aa9;
+// #29c5ff;
+//#37dbd0;
+
+.input {
+  width: 80%;
+  font-weight: lighter;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-bottom: 4px solid $color3;
+  transition: 2s border-color;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boxShadow {
+  box-shadow: 2px 2px 2px 2px lighten(black, 50);
+}
