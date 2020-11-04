@@ -63,8 +63,6 @@
       .mainH__text {
         order: 3;
         writing-mode: vertical-rl;
-        transition: 2s transform;
-        transform: rotateY(180deg);
       }
     }
   }
@@ -75,10 +73,7 @@
           color: $color1;
         }
       }
-
-      .mainH__text {
-        transform: rotateY(0deg);
-      }
+\
     }
   }
 }
