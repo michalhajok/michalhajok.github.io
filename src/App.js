@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-function App() {
-  return (
+// import Contact from "./components/contact";
+import About from "./components/about";
+import Projects from "./components/projects";
+
+import './App.scss';
+
+
+const App = () =>  (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <nav className="navbar">
+            <ul className="navbar__nav">
+                {/* <li>About</li>
+                <li>Skills</li>
+                <li>Experience</li>
+                <li>Projects</li> */}
+            </ul>
+            <figure className="navbar__figure">
+                <img src="pictures//photo.jpg" alt="photosad"/>                
+                <p>Michał Hajok</p>
+                <div>
+                <a href="https://www.linkedin.com/in/michalhajok//" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                    </a>
+                    <a href="https://github.com/michalhajok" target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </a>
+                </div>
+            </figure>
+        </nav>
+        <main>
+            <About />
+            <Projects />
+            {/* <Contact /> */}
+        </main>
     </div>
-  );
-}
+)
 
 export default App;

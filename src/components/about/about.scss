@@ -1,0 +1,73 @@
+@import '../../base';
+
+.sections__about {
+    padding: 20px 50px;
+
+    .about__details {
+        padding: 10px 50px;
+        
+        p {
+            margin: 20px 100px 20px 20px;
+            line-height: 30px;
+            color: $dark;
+        }
+        
+        
+        .details__cv {
+            cursor: pointer;
+            width: fit-content;
+            margin: 10px 20px;
+            border: solid 2px $darkPink;
+            transition: 0.6s ease-in all;
+            
+            &:hover {
+                background-color: $darkPink;
+                color: $dark;
+                box-shadow: 0 0 1px $darkPink;
+            }
+            
+            a {
+                display: block;
+                color: $dark;
+                padding: 5px 10px;
+            }
+            
+        }
+    }
+    
+    .about__skills {
+        grid-column: 2/4;
+        
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            li {
+                cursor: default;
+                border-radius: 8px;
+                margin: 5px;
+                padding: 8px 10px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .sections__about {
+        padding: 5px;
+        
+        .about__details {
+            padding: 10px;
+            
+            p {
+                margin: 20px 10px;
+            }
+            
+            .details__cv {
+                margin: 10px 10px;
+            }
+        }
+    }
+}
