@@ -1,0 +1,30 @@
+{
+    "skills": {
+        "main": [
+            {
+                "name": "HTML5",
+                "level": "Upper intermediate"
+            },
+            {
+                "name": "CSS3",
+                "level": "Upper intermediate"
+            },
+            {
+                "name": "Javascript",
+                "level": "Intermediate"
+            },
+            {
+                "name": "React",
+                "level": "Upper intermediate"
+            }
+        ],
+        "rest": [
+            "Next Js",
+            "Node Js",
+            "Sass",
+            "SQL",
+            "React Native",
+            "Git"
+        ]
+    }
+}

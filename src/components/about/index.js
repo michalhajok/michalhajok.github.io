@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { skills } from './skills.json'
+
 import './about.scss'
 
 const getYears = () => {
@@ -26,18 +28,25 @@ const About = () =>  (
     </div>
     <div className="about__skills">
         <h2 className="section__header">Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Sass</li>
-            <li>Node Js</li>
-            <li>Git</li>
-            <li>SQL</li>
-            <li>React Native</li>
-            <li>Next Js</li>
-        </ul>
+        <div className="skills__main">
+            {skills.main.map(({name, level}) => (
+                <div key={name} className="main__skill">
+                    <div className="skill__label">
+                        <div>{name}</div>
+                        <div>{level}</div>
+                    </div>
+                    <span>
+                        <span className={level.replace(/\s/g, "")}>
+                        </span>
+                    </span>
+                </div>
+            ))}
+        </div>
+        <div className="skills__rest">
+            {skills.rest.map(e => (
+                <div key={e}>{e}</div>
+            ))}
+        </div>
     </div>
 </section>
 )
