@@ -5,21 +5,21 @@
             "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket. ",
             "github": "https://github.com/michalhajok/shop_app",
             "demo": "https://michalhajok.github.io/shop_app/",
-            "picture": "pictures//shopApp.png"
+            "picture": "pictures//shopApp.PNG"
         },
         {
             "title": "Games Platform",
             "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket. This app is an online shop, in which you can search products by its category. You can also add products to your online basket.",
             "github": "https://github.com/michalhajok/gamesplatform",
             "demo": "https://gamesplatform.vercel.app",
-            "picture": "pictures//gamePlatform.png"
+            "picture": "pictures//gamePlatform.PNG"
         },
         {
             "title": "Workout app",
             "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket.                     This app is an online shop, in which you can search products by its category. You can also add products to your online basket.",
             "github": "https://github.com/michalhajok/project06",
             "demo": "https://michalhajok.github.io/project06/",
-            "picture": "pictures//workoutApp.png"
+            "picture": "pictures//workoutApp.PNG"
         }
     ]
 }
