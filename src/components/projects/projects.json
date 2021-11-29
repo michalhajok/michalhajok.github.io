@@ -2,21 +2,21 @@
     "data": [
         {
             "title": "Shop App",
-            "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket. ",
+            "details": "Application created with Create-React-App. The app uses Sass, Redux, Redux-thunk, React-router-dom, React-modal.Backend created with Express js. Database is a mongoDB.This app is an online shop, in which you can search products by its category. You can also add products to your online basket. ",
             "github": "https://github.com/michalhajok/shop_app",
             "demo": "https://michalhajok.github.io/shop_app/",
             "picture": "pictures//shopApp.PNG"
         },
         {
             "title": "Games Platform",
-            "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket. This app is an online shop, in which you can search products by its category. You can also add products to your online basket.",
+            "details": "This app is a gaming platform. On the website you will find games such as rock paper scissors, memory, quizzes. The application is made in the Next js technology. It is also integrated with the mongodb database.",
             "github": "https://github.com/michalhajok/gamesplatform",
             "demo": "https://gamesplatform.vercel.app",
             "picture": "pictures//gamePlatform.PNG"
         },
         {
             "title": "Workout app",
-            "details": "This app is an online shop, in which you can search products by its category. You can also add products to your online basket.                     This app is an online shop, in which you can search products by its category. You can also add products to your online basket.",
+            "details": "Application was created with Create-React-App, with usage of Api, Sass, Mirage JS. Routing was created with Reach Router. All icons used are from Font Awesome. Colors used in the page can be found at https://flatuicolors.com. In this page you can create your own workout plan and save your results. Also, you can find out which exercise you can do at the gym. And what equipment you will need to do the selected exercises.",
             "github": "https://github.com/michalhajok/project06",
             "demo": "https://michalhajok.github.io/project06/",
             "picture": "pictures//workoutApp.PNG"
