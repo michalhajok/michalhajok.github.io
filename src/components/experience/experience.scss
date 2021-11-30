@@ -1,0 +1,103 @@
+@import '../../base';
+
+.sections__experiences {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    .section__header {
+        grid-column: 2/3;
+    }
+    
+    .experiences__three {
+        grid-column: 2/3;
+        
+        .three__experience {
+            display: flex;
+            
+            div {
+                padding: 20px 20px;
+                
+                h3 {
+                    padding: 3px 0;
+                }
+                
+                p {
+                    padding: 5px 0;
+                    font-size: 16px;
+                }
+                
+                .content__date {
+                    opacity: 0.4;
+                    font-weight: bold;
+                }
+            }
+            
+            .experience__content {
+                flex-basis: 50%;
+                position: relative;
+                
+                span {
+                    position: absolute;
+                    top: 0;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: $lightPink;
+                    box-shadow: 0 0 3px 0 $darkPink;
+                }
+            }
+            
+            .experience__null {
+                flex-basis: 50%;
+            }
+        }
+        
+        .left {
+            .experience__content {
+                order: 0;
+                border-right: 0.5px solid $darkPink;
+                
+                span {
+                    right: -7px;
+                }
+            }
+            
+            .experience__null {
+                order: 1;
+                border-left: 0.5px solid $darkPink;
+            }
+        }
+        
+        .right { 
+            .experience__content {
+                order: 1;
+                border-left: 0.5px solid $darkPink;
+                
+                span {
+                    left: -7px;
+                }
+            }
+            
+            .experience__null {
+                order: 0;
+                border-right: 0.5px solid $darkPink;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) { 
+    .sections__experiences {
+        width: 100%;
+        
+        .section__header {
+            grid-column: 1/4;
+        }
+        
+        .experiences__three {
+            grid-column: 1/4;
+        }
+    }
+}

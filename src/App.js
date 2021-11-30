@@ -4,6 +4,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 // import Contact from "./components/contact";
 import About from "./components/about";
 import Projects from "./components/projects";
+import Experience from "./components/experience";
+
 
 import './App.scss';
 
@@ -32,6 +34,7 @@ const App = () =>  (
         </nav>
         <main>
             <About />
+            <Experience />
             <Projects />
             {/* <Contact /> */}
         </main>
